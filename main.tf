@@ -10,7 +10,7 @@ locals {
 terraform {
   backend "s3" {
     bucket = "temp1983"
-    key     = "django/statefile.tfstate"
+    key    = "django/statefile.tfstate"
     #key     = local.bucket_key
     encrypt = true
     region  = "ap-south-1"
