@@ -4,7 +4,7 @@ terraform {
     bucket = var.bucket_name
     #key     = "django/statefile.tfstate"
     key     = var.bucket_key
-    need_encrypt = var.need_encrypt
+    encrypt = var.need_encrypt
     region = "ap-south-1"
   }
 }
