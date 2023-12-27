@@ -9,7 +9,7 @@ locals {
 #adding this comment
 terraform {
   backend "s3" {
-    bucket = "temp1985"
+    bucket = "temp1983"
     key     = "django/statefile.tfstate"
     #key     = local.bucket_key
     encrypt = true
