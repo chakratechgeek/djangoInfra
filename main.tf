@@ -1,3 +1,14 @@
+#adding this comment
+terraform {
+  backend "s3" {
+    bucket = var.bucket_name
+    #key     = "django/statefile.tfstate"
+    key     = var.bucket_key
+    region  = local.aws_region
+    encrypt = var.need_encrypt
+  }
+}
+
 module "ec2_for_django" {
   source = "git::https://github.com/chakratechgeek/djangoAwsInfra-BP.git//ec2"
 
