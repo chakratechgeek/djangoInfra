@@ -9,11 +9,11 @@ locals {
 #adding this comment
 terraform {
   backend "s3" {
-    bucket = local.bucket_name
-    #key     = "django/statefile.tfstate"
-    key     = local.bucket_key
-    encrypt = local.need_encrypt
-    region  = local.aws_region
+    bucket = "temp1985"
+    key     = "django/statefile.tfstate"
+    #key     = local.bucket_key
+    encrypt = true
+    region  = "ap-south-1"
   }
 }
 
