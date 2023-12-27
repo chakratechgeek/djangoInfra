@@ -1,5 +1,5 @@
 module "ec2_for_django" {
-  source = "git::https://github.com/organization-name/terraform-modules.git//ec2"
+  source = "git::https://github.com/chakratechgeek/djangoAwsInfra-BP.git//ec2"
 
   bucket_name      = var.bucket_name
   bucket_key       = var.bucket_key
