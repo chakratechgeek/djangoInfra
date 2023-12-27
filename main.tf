@@ -1,10 +1,11 @@
 #adding this comment
 terraform {
   backend "s3" {
-    bucket_name = var.bucket_name
+    bucket = var.bucket_name
     #key     = "django/statefile.tfstate"
-    bucket_key     = var.bucket_key
+    key     = var.bucket_key
     need_encrypt = var.need_encrypt
+    region = "ap-south-1"
   }
 }
 
