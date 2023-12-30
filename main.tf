@@ -26,5 +26,6 @@ module "ec2_for_django" {
   instance_type    = var.instance_type
   key_name         = var.key_name
   pub_ip_associate = var.pub_ip_associate
+  create_instance  = var.create_instance
 
 }
