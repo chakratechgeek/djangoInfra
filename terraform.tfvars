@@ -5,4 +5,4 @@ ec_ami           = "ami-03f4878755434977f"
 instance_type    = "t2.micro"
 key_name         = "django-server-l-0-dev-key"
 pub_ip_associate = false
-create_instance  = false 
+create_instance  = false
