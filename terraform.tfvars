@@ -6,4 +6,4 @@ instance_type        = "t2.micro"
 key_name             = "django-server-l-0-dev-key"
 pub_ip_associate     = false
 create_instance      = false
-spot_create_instance = true
+spot_create_instance = false 
