@@ -1,10 +1,3 @@
-locals {
-  # Example: AWS region
-  aws_region   = "ap-south-1"
-  bucket_name  = "temp1985"
-  bucket_key   = "django/statefile.tfstate"
-  need_encrypt = true
-}
 
 #adding this comment
 terraform {
@@ -27,5 +20,6 @@ module "ec2_for_django" {
   key_name         = var.key_name
   pub_ip_associate = var.pub_ip_associate
   create_instance  = var.create_instance
+  spot_create_instance = var.spot_create_instance
 
 }

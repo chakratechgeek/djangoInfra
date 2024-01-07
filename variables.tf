@@ -36,3 +36,8 @@ variable "create_instance" {
   default = false
 
 }
+
+variable "spot_create_instance" {
+  type = bool
+  default = true
+}
